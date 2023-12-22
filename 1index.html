@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Faisal-form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <br><br>
+  <h1 id="title">studyFaisal Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input required placeholder="Enter your name" id="name" type="text" />
+
+    <label id="email-label" for="email">Email</label>
+    <input required placeholder="Enter your Email" id="email" type="email" />
+
+    <label id="number-label" for="number">Age (optional)</label>
+    <input placeholder="Age" id="number" type="number" min="13" max="120" />
+
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="hello">Select current role</option>
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+
+    <label>Would you recommend studyFaisal to a friend?</label>
+    <input type="radio" id="definitely" name="recommendation" value="Definitely">
+    <label for="definitely">Definitely</label>
+    <input type="radio" id="maybe" name="recommendation" value="Maybe">
+    <label for="maybe">Maybe</label>
+    <input type="radio" id="not-sure" name="recommendation" value="Not sure">
+    <label for="not-sure">Not sure</label>
+
+    <label for="option">What is your favorite feature of studyFaisal platform?</label>
+    <select id="option" name="option">
+      <option value="">Select an option</option>
+      <option>Challenges</option>
+      <option>Projects</option>
+      <option>Community</option>
+      <option>Open Source</option>
+    </select>
+
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <input type="checkbox" id="l1" name="improvements" value="Front-end Projects">
+    <label for="l1">Front-end Projects</label>
+    <input type="checkbox" id="l2" name="improvements" value="Back-end Projects">
+    <label for="l2">Back-end Projects</label>
+    <input type="checkbox" id="l3" name="improvements" value="Data Visualization Challenges">
+    <label for="l3">Data Visualization Challenges</label>
+    <input type="checkbox" id="l4" name="improvements" value="Open Source Community">
+    <label for="l4">Open Source Community</label>
+    <input type="checkbox" id="l5" name="improvements" value="Gitter help rooms">
+    <label for="l5">Gitter help rooms</label>
+    <input type="checkbox" id="l6" name="improvements" value="Videos">
+    <label for="l6">Videos</label>
+    <input type="checkbox" id="l7" name="improvements" value="City Meetups">
+    <label for="l7">City Meetups</label>
+    <input type="checkbox" id="l8" name="improvements" value="Wiki">
+    <label for="l8">Wiki</label>
+    <input type="checkbox" id="l9" name="improvements" value="Forum">
+    <label for="l9">Forum</label>
+    <input type="checkbox" id="l10" name="improvements" value="Additional Courses">
+    <label for="l10">Additional Courses</label>
+
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea placeholder="Enter your comments here..." id="comments" name="comments" rows="4" cols="50"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+
+</html>
